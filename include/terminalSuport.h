@@ -9,11 +9,11 @@
 namespace mt_cmd {
 
     #ifdef _WIN32
-	void set_window_state(bool state) {
+	inline void set_window_state(bool state) {
 		if (state) ShowWindow(GetConsoleWindow(), SW_SHOW);
 		else ShowWindow(GetConsoleWindow(), SW_HIDE);
 	}
-	void set_text_color(int color) {
+	inline void set_text_color(int color) {
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 	}
 	void set_cursor_visibility(bool visible)
