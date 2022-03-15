@@ -26,7 +26,8 @@ namespace mt_file {
     //delete a normal file...
     void deleteFileData(string path);
 
-    //reading a binary file...
+    //reading a binary file... 
+    //not so good because you can see info in bin file
     void writeToBinaryFile(string path, string data);
     string readBinaryFile(string path);
 }

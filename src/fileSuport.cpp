@@ -14,6 +14,9 @@ namespace mt_file
                 text << line << "\n";
             }
         }
+        else {
+            cout << "Couldn't load the file.\n";
+        }
         fileReader.close();
         return text.str();
     }
